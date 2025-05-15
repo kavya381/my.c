@@ -17,3 +17,8 @@ else {
     printf("%d\n is not a armstrong",original);
 }
 }
+o/p
+ enter the value of num
+370
+370
+ is an armstrong
