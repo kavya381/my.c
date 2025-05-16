@@ -1,29 +1,26 @@
 #include <stdio.h>
 struct Employee {
     int id;
-    char name[50];
+    char name[30];
     float salary;
 };
+
 int main() {
-    struct Employee emp[5];
+    struct Employee e[5];
     int i;
     printf("Enter information of 5 employees:\n");
     for (i = 0; i < 5; i++) {
         printf("\nEmployee %d\n", i + 1);
-        printf("Enter ID: ");
-        scanf("%d", &emp[i].id);
+        scanf("%d", &e[i].id);
         printf("Enter Name: ");
-        scanf(" %[^\n]", emp[i].name); 
+        scanf(" %s", e[i].name);
         printf("Enter Salary: ");
-        scanf("%f", &emp[i].salary);
+        scanf("%f", &e[i].salary);
     }
-    printf("\nEmployee Information:\n");
-    for (i = 0; i < 5; i++) {
-        printf("\nEmployee %d\n", i + 1);
-        printf("ID: %d\n", emp[i].id);
-        printf("Name: %s\n", emp[i].name);
-        printf("Salary: %.2f\n", emp[i].salary);
+    int sum=0,avg; 
+    for(i=0;i<3;i++){
+        sum=sum+e[i].salary;
     }
-
-    return 0;
-}
+    avg=sum/3;
+    printf("\n average salary of employees is %d",avg);
+    }
