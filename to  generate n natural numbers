@@ -1,0 +1,37 @@
+#include <stdio.h> 
+
+int sod(int n) 
+
+{ 
+
+    int sum=0; 
+
+    for(int i=1;i<=n;i++) 
+
+    { 
+
+        sum+=i; 
+
+    } 
+
+    return sum; 
+
+} 
+
+int main()  
+
+{ 
+
+    int n; 
+
+    printf("enter a number :"); 
+
+    scanf("%d",&n); 
+
+    printf("%d",sod(n)); 
+
+} 
+o/p
+Enter a number 5 
+
+25 
