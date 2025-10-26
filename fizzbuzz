@@ -1,0 +1,32 @@
+#include <stdio.h>
+void fb(int num)
+{
+    if (num%3==0&&num%5==0){
+    printf("fizzbuzz");
+}
+    else if(num%3==0)
+    {
+    printf("fizz");
+    }
+    else if(num%5==0)
+    {
+        printf("buzz");
+    }
+    else{
+    printf("%d",num);
+} 
+}
+int main() 
+{
+    printf("enter a number :");
+    scanf("%d",& num);
+    fb(num);
+}
+
+o/p
+enter a number:87
+fizz
+enter a number:45
+fizzbuzz
+enter a number:20
+buzz
