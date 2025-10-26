@@ -1,0 +1,13 @@
+#include <stdio.h>
+int validate(int pin)
+{
+    int dpin=9019;
+    return dpin==pin;
+}
+int main() 
+{
+    int pin;
+    printf("enter the atmpin");
+    scanf("%d",&pin);
+    printf("%d",(validate(pin)));
+}
